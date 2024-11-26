@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: false
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "**/*.kt"
+      instructions: "Analyze the Kotlin file to ensure adherence to clean code principles, including maintaining meaningful and descriptive names for variables, classes, and functions; keeping functions small and focused on a single responsibility; avoiding unnecessary comments by writing self-explanatory code; ensuring proper formatting with consistent indentation and spacing; limiting the use of global variables and ensuring proper encapsulation; avoiding code duplication by applying the DRY (Don't Repeat Yourself) principle; adhering to the Single Responsibility Principle (SRP) and other SOLID design principles; ensuring the code is declarative in nature, favoring high-level expressions and operators for clarity and conciseness; handling errors gracefully using clear, specific exceptions or functional constructs like Either; consistently looking out for and mitigating any leakage of sensitive data within the service layer; ensuring consistent use of null safety and type declarations; and writing testable code by keeping dependencies modular and minimizing side effects. Should never return plain text for errors instead of proper error objects. "
+chat:
+  auto_reply: true
